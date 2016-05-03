@@ -11,9 +11,9 @@ import java.net.URL;
  */
 public class HighScore1 {
 	/**
-	 *
 	 * Function getScores()
 	 * @return Array of String : it's an array of scores from the csv on thinkspeak
+	 * 
 	 */
 	String[] getScores(){
 		try{

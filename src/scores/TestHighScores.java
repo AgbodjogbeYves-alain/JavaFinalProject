@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.util.Scanner;
 
 /**
+ * 
  * Class TestHighScores for the test
  * @author Yves-alain Agbodjogbe and Nicolas Zambrano
  *
