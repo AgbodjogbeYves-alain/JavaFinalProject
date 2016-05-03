@@ -6,11 +6,15 @@ import java.util.Scanner;
 
 /**
  * 
- * Class TestHighScores for the test
+ * 
  * @author Yves-alain Agbodjogbe and Nicolas Zambrano
  *
  */
 public class TestHighScores {
+	/**
+	 * Procedure de recuperation de nom et de scores sur Thinkspeak
+	 * @param aucun
+	 */
 	public static void main(String[] args){
 		HighScore1 highScore=new HighScore1(); //création d'un objet HighScore
 		String[] hs=highScore.getScores();

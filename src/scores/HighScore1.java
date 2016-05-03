@@ -15,7 +15,7 @@ public class HighScore1 {
 	 * @return Array of String : it's an array of scores from the csv on thinkspeak
 	 * 
 	 */
-	String[] getScores(){
+	public String[] getScores(){
 		try{
 		String url = "https://api.thingspeak.com/channels/112126/feeds.csv"; //url de notre channel
 
