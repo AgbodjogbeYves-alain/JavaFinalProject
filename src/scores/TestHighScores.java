@@ -13,7 +13,8 @@ import java.util.Scanner;
 public class TestHighScores {
 	/**
 	 * Procedure de recuperation de nom et de scores sur Thinkspeak
-	 * @param aucun
+	 * @param args 
+	 * Ne prend aucun arguments
 	 */
 	public static void main(String[] args){
 		HighScore1 highScore=new HighScore1(); //création d'un objet HighScore
