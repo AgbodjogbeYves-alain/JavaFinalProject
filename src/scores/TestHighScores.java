@@ -29,7 +29,7 @@ public class TestHighScores {
 	         // FileReader va ouvrir le fichier
 					 // BufferedReader va lire le fichier
 		try {
-	    	  FileReader fichier = new FileReader("scoreSamples.txt");
+	    	  FileReader fichier = new FileReader("../../scoreSamples.txt");
 	    	  BufferedReader readFile  = new BufferedReader(fichier);
 	         String ligne;
 	         int n = 0;
