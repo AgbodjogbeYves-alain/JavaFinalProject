@@ -6,14 +6,14 @@ import java.net.URL;
 
 /**
  * 
- * @author Yves-alain Agbodjogbe and Nicolas Zambrano
+ * @author Othniel Agbodjogbe and Nicolas Zambrano
  *
  */
 public class HighScore1 {
 	/**
-	 * Function getScores()
-	 * @return Array of String : it's an array of scores from the csv on thinkspeak
 	 * 
+	 * @return Array of String 
+	 * it's an array of scores from the csv on thinkspeak
 	 */
 	public String[] getScores(){
 		try{
