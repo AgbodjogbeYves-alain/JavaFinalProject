@@ -54,7 +54,7 @@ public class HighScore2 {
 		String[] scores;
 		for (int i = 0; i < readScores.length; i++) {
 			scores = readScores[i].split(",");
-			allBest.add(new BestPlayer(scores[3],Integer.parseInt(scores[2])));
+			allBest.add(new BestPlayer(scores[3],Integer.parseInt(scores[1])));
 		}
 		Collections.sort(allBest,Collections.reverseOrder());
 		BestPlayer[] top10 = new BestPlayer[10];
