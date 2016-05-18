@@ -11,6 +11,7 @@ import java.net.URL;
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class HighScore2 {
 	/**
@@ -48,13 +49,19 @@ public class HighScore2 {
 	}
 	
 	
-	public ArrayList<Integer> tenBestScores(String [] readScores){
-		ArrayList<Integer> tbs = new ArrayList<Integer>();
-		readScores = getScores();
-		for(String row: readScores){
-			row1 =0;
+	public BestPlayer[] tenBestScores(String[] readScores){
+		ArrayList<BestPlayer> allBest = new ArrayList<BestPlayer>();
+		String[] scores;
+		for (int i = 0; i < readScores.length; i++) {
+			scores = readScores[i].split(",");
+			allBest.add(new BestPlayer(scores[3],Integer.parseInt(scores[2])));
 		}
-		return null;
-		 
-	 }
+		Collections.sort(allBest,Collections.reverseOrder());
+		BestPlayer[] top10 = new BestPlayer[10];
+		for (int j = 0; j < 10; j++) {
+			top10[j] = allBest.get(j);
+		}
+		return top10;
+	}
 }
+

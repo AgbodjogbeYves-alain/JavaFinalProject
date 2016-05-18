@@ -6,6 +6,7 @@ public class BestPlayer {
 	String player;
 	int score;
 	
+	
 	public BestPlayer(String player,int score){
 		this.player = player;
 		this.score = score;
