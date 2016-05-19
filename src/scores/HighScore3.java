@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class HighScore2 {
+public class HighScore3 {
 	/**
 	 * 
 	 * @return Array of String 
@@ -55,7 +55,6 @@ public class HighScore2 {
 		for (String ligne : readScores) {
 			String[] score = ligne.split(",");
 			if(score.length!=1){
-
 				if(score.length==4){
 					name = score[3];
 				}else{
@@ -77,5 +76,21 @@ public class HighScore2 {
 
 		return top10;
 	}
+
+	public void sendScores(BestPlayer p){
+		try{
+			String url = "https://api.thingspeak.com/update?api_key=84ZFWY283ES507G8&field1="+ p.getScore() +"&field2=" + p.getName(); //url de notre channel
+
+			URL obj = new URL(url); //creation d'un objet URL
+			HttpURLConnection con = (HttpURLConnection) obj.openConnection(); //ouverture de la connexion
+			int responseCode = con.getResponseCode(); //demande d'un get sur la connexion
+
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+
+	}
+
 }
 

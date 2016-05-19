@@ -2,7 +2,7 @@ package scores;
 
 import java.util.ArrayList;
 
-public class BestPlayer {
+public class BestPlayer  implements Comparable<BestPlayer>{
 	String player;
 	int score;
 	
@@ -25,6 +25,15 @@ public class BestPlayer {
 			result = 1;
 		}
 		return result ;
+	}
+
+	public String getName() {
+		return player;
+	}
+
+	public int getScore() {
+		// TODO Auto-generated method stub
+		return score;
 	}
 	
 	 

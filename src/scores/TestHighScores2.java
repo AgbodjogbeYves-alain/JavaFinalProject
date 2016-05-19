@@ -48,7 +48,7 @@ public class TestHighScores2 {
 	         System.out.println("Copie terminée !");
 
 
-					 //random pour trouver une case aleatoire du tableau de scores
+			//random pour trouver une case aleatoire du tableau de scores
 	         int aleat = (int) (Math.random()*n);
 	         System.out.println("Player : "+playerName+" Score : "+scores[aleat]);
 		} catch (Exception e) {
@@ -56,9 +56,10 @@ public class TestHighScores2 {
 			}
 		//Partie 2 projet
 		BestPlayer[] toplayer = highScore2.tenBestScores(hs2);
-		for(BestPlayer player : toplayer) {
-			if (player != null){
-				System.out.println(player);
+		for(BestPlayer playerB : toplayer) {
+			
+			if (playerB != null){
+				System.out.println(playerB.player);
 	}
   }
  }
