@@ -11,7 +11,7 @@ public class TestHighScores4 {
 	 * Ne prend aucun arguments
 	 */
 	public static void main(String[] args){
-		HighScore3 highScore4 = new HighScore3();
+		HighScore4 highScore4 = new HighScore4();
 		String[] hs4=highScore4.getScores();
 		System.out.println("Meilleurs scores :");
 		hs4=highScore4.getScores();
@@ -83,6 +83,7 @@ public class TestHighScores4 {
 				System.out.println();
 				System.out.println("Nouveaux scores :");
 				System.out.println();
+				hs4=highScore4.getScores();
 				topPlayer = highScore4.tenBestScores(hs4);
 				for(BestPlayer playerB : topPlayer) {
 
