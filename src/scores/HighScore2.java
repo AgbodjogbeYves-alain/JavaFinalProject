@@ -3,16 +3,15 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-/**
- * 
- * @author Othniel Agbodjogbe and Nicolas Zambrano
- *
- */
-
 import java.util.ArrayList;
 import java.util.Collections;
 
+
+/**
+ * HighScore2 class for the top 10
+ * @author Agbodjogbe Yves-alain and Nicolas Zambrano
+ *
+ */
 public class HighScore2 {
 	/**
 	 * 
@@ -48,7 +47,11 @@ public class HighScore2 {
 		}
 	}
 
-
+	/**
+	 * Return a tab of best player from the csv on thinkspeak
+	 * @param readScores tab of string
+	 * @return tab of best scores
+	 */
 	public BestPlayer[] tenBestScores(String[] readScores){
 		String name;
 		ArrayList<BestPlayer> allBest = new ArrayList<BestPlayer>();

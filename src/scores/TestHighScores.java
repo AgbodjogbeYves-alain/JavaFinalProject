@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * 
- * 
+ * TestHighScores class part 1
  * @author Yves-alain Agbodjogbe and Nicolas Zambrano
  *
  */

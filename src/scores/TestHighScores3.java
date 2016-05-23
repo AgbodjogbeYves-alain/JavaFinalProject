@@ -4,6 +4,13 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
 
+
+/**
+ * 
+ * TestHighScores class part 3
+ * @author Yves-alain Agbodjogbe and Nicolas Zambrano
+ *
+ */
 public class TestHighScores3 {
 	/**
 	 * Procedure de recuperation de nom et de scores sur Thinkspeak
@@ -53,7 +60,7 @@ public class TestHighScores3 {
 			System.out.println("Player : "+playerName+" Score : "+scores[aleat]);
 
 
-			//Partie 2 projet
+			//Partie 3 projet
 			System.out.println("Anciens scores :");
 			System.out.println();
 			BestPlayer[] topPlayer = highScore3.tenBestScores(hs3);
@@ -86,6 +93,5 @@ public class TestHighScores3 {
 			e.printStackTrace();
 		}
 
-		//Partie 3 projet
 	}
 }

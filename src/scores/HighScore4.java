@@ -13,6 +13,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
+/**
+ * HighScore class 4 for the game
+ * @author Agbodjogbe Yves-alain and Nicolas Zambrano
+ *
+ */
 public class HighScore4 {
 	/**
 	 * 
@@ -49,6 +55,11 @@ public class HighScore4 {
 	}
 
 
+	/**
+	 * Return a tab of best player from the csv on thinkspeak
+	 * @param readScores tab of string
+	 * @return tab of best scores
+	 */
 	public BestPlayer[] tenBestScores(String[] readScores){
 		String name;
 		ArrayList<BestPlayer> allBest = new ArrayList<BestPlayer>();
@@ -77,6 +88,10 @@ public class HighScore4 {
 		return top10;
 	}
 
+	/**
+	 * Function which permit to send scores and update the csv on thinkspeak
+	 * @param p is a Best player
+	 */
 	public void sendScores(BestPlayer p){
 		try{
 			String url = "https://api.thingspeak.com/update?api_key=84ZFWY283ES507G8&field1="+ p.getScore() +"&field2=" + p.getName(); //url de notre channel

@@ -4,6 +4,13 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
 
+
+/**
+ * 
+ * TestHighScores class part 4
+ * @author Yves-alain Agbodjogbe and Nicolas Zambrano
+ *
+ */
 public class TestHighScores4 {
 	/**
 	 * Procedure de recuperation de nom et de scores sur Thinkspeak
@@ -61,7 +68,7 @@ public class TestHighScores4 {
 			System.out.println("Player : "+playerName+" Score : "+scores[aleat]);
 
 
-			//Partie 2 projet
+			//Partie 4 projet
 			System.out.println("Anciens scores :");
 			System.out.println();
 			topPlayer = highScore4.tenBestScores(hs4);

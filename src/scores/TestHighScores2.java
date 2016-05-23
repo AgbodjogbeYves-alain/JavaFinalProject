@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
 
+/**
+ * 
+ * TestHighScores class part 2
+ * @author Yves-alain Agbodjogbe and Nicolas Zambrano
+ *
+ */
 public class TestHighScores2 {
 	/**
 	 * Procedure de recuperation de nom et de scores sur Thinkspeak
